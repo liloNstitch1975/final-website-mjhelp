@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="general.CSS">
+    <link rel="icon" href=".\assets\58d87233-b33f-476f-aa12-4e33d3d3a084 (1).jpg">
+    <title>ABC EXT</title>
+</head>
+
+<style>
+    body {
+        overflow-y: hidden
+    }
+
+    .logo-top {
+        left: 820px; top: 35px;
+    }
+
+    .intro {
+        position: absolute;
+        left: 130px;
+        top: 1050px;
+        font-size: large;
+    }
+
+    .info-box {
+        position: absolute; bottom: -1010px; 
+        width: 100%;
+        background-color: rgb(32, 32, 32);
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+
+    .info-text {
+        color: white;
+        position: relative; left: 430px;
+    }
+
+    .info {
+        float: left;
+        padding-right: 30px; padding-left: 30px;
+    }
+   
+    header {
+        position: absolute; top: 1030px; margin-left: 140px; 
+        color: white;
+        font-size: 40px;
+    }
+
+    .miniLogo {
+        position: relative; left: 560px;
+    }
+
+    #teamfoto {
+        z-index: 11;
+        float: right;
+        position: relative; top: 885px; right: 150px;
+        margin-left: 50px;
+    }
+</style>
+
+<body>
+        <img src=".\assets\exampleHomePage-for-ABC.jpg" alt="House" class="absolute order-0">
+        <div class="co-logo">
+            <img src=".\assets\58d87233-b33f-476f-aa12-4e33d3d3a084 (1).jpg" alt="Company Logo" class="absolute logo-top logo-right mt-3 order-5 ">
+            <p class="text-black est order-5" style="position: relative; top: 390px; left: 820px; font-size: larger; font-weight: 500;">Est. 2013</p>
+        </div>                       
+            <!-- <h1 style="font-size: 65px; position: relative; top: 45px; left: 560px;" class="a"><b>A</b>lluring</h1>
+            <h1 style="font-size: 65px; position: relative; top: 45px; left: 600px;" class="b"><b>B</b>rilliant</h1>
+            <h1 style="font-size: 65px; position: relative; top: 45px; left: 640px; z-index: 5;" class="c"><b>C</b>aptivating</h1>   -->
+         <aside class="icons">
+                <div class="i-effect"> <a href="gallery.html"> <!-- icon clickables below -->
+                    <div class="underline">
+                    <div class="mt-2"><span class="material-symbols-outlined lgFont">photo_library</span></div> 
+                    <div class="mt-1 gallery-i">Gallery</div> </div></a>
+                </div>    
+                
+                <div class="i-effect"> <a href="contact.html">
+                    <div class="underline">
+                    <div class="mt-5"><span class="material-symbols-outlined lgFont">contact_page</span></div>
+                    <div class="mt-1 contact-i">Contact</div> </div></a> 
+                </div>    
+
+                <div class="i-effect">  <a href="products.html">
+                    <div class="underline">
+                    <div class="mt-5"><span class="material-symbols-outlined lgFont">house_siding</span></div>
+                    <div class="mt-1 products-i">Services</div> </div></a> 
+                </div> 
+        </aside>
+        
+            <button class="buttonDown" id="btn" onclick="scrlldwn()">See More ▼</button> <br>
+            <button class="buttonDown" onclick="scrllup()">See Less ▲</button>
+        
+<header>Our mission</header>
+    <section class="w-2/5 p-10 bg-gray-100 my-12 intro"> 
+                <p>One's home is much more than just a living space. Your home is often your escape and your safespace that holds your family.
+                    It's a source of pride and joy. For over 10 years, A.B.C Exteriors has been creating beautiful homes with a passion for craftsmanship
+                    and a commitment to excellence, We are proud to be one of the up and coming leaders in the industry.
+                    <br>
+                    <br>
+                    At A.B.C. Exteriors, we understand that your home or commercial property is a reflection of your personality and values. 
+                    That's why our team of skilled professionals works tirelessly to bring your vision to life, creating stunning outdoor spaces that leave a lasting impression.
+                    we take pride in building not just structures, but also relationships. Our dedication to customer satisfaction, reliability, and integrity has earned us a 
+                    reputation for excellence within the community.
+                    <br>
+                    <br>
+                    With years of experience under our tool belts, we specialize in a wide range of exterior construction services and captivating outdoor living spaces that stand the test of time.
+                </p> 
+     </section>
+     <aside id="teamfoto"> <img src="/Public/assets/team.jpg" alt="Team photo" id="team-photo"> </aside>
+    
+     <div class="end">
+        <section class="info-box p-10 bg-gray-100 my-12">  
+        <!-- Company Overview Info below-->
+            <img src="./assets/miniLogo.png" alt="Company Logo" class="miniLogo">
+            <div class="info-text"> <h2 class="text-gray grid grid-cols-4 gap-4">Info</h2>
+                <p class="info">
+                <i>Office</i><br>
+                14852 S. Heritage Way <br> Bluffdale, UT 84096 <br> 801-919-7167
+                </p>
+                <p class="info"> <i>Owner</i> <br>
+                Claudio Lillo Lillo <br> Email: exteriorsolutions@gmail.com <br> Mobile: 801-318-3294 
+                </p>
+            </div>           
+        </section>
+</div>
+</body>
+<script>
+    const btn = document.getElementById('btn')
+
+    function scrlldwn() {
+        window.scroll(0, 1000)
+    }
+
+    function scrllup() {
+        window.scroll(0, 0)
+    }
+</script>
+</html>

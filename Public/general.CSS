@@ -1,0 +1,148 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(75, 75, 75);
+    height: 200vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+    }
+
+.lgFont {
+    font-size: 70px !important
+}
+
+.icons {
+    position: absolute; right: 680px; top: 620px;
+    z-index: 10;
+    align-items: center; justify-content: center; display: flex; 
+    color: white;
+}
+
+/* 
+
+.icons {
+    position: fixed; right: 60px; top: 150px;
+    z-index: 10;
+}
+
+*/
+
+.i-effect {
+    transform: scale(1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto; margin-left: 60px; margin-right: 60px; 
+}
+/* this was white */ 
+.i-effect:hover {
+    transform: scale(1.2);
+    color: white;
+}
+/* this was white */ 
+.underline {
+    background: linear-gradient(0deg, white, white) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+}
+
+.underline:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    }
+
+.underline {
+        padding-bottom: 2px;
+        --bg-h: 2px;
+        }
+
+a { color: white }
+
+a { text-decoration: none;  }
+a:visited { text-decoration: none; /*color*/ }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+button {
+    background-color: rgba(3, 3, 3, 0.6);
+    z-index: 9;
+    position: relative; top: 810px; left: 900px;
+    font-size: larger; color: white; 
+    padding: 5 10 5 10;
+    margin-bottom: 145px;
+    
+    border: none;
+    
+    transition: color 0.5s; transform: 0.2s; background-color: 0.2s;
+    outline: none;
+    border-radius: 3px;
+    border: 3px solid transparent;
+    &:active {
+        transform: translateY(3px);
+    }
+    &::after, &::before {
+        border-radius: 3px;
+    }
+}
+
+.buttonDown {
+    background-color: transparent;
+    color: darken($darkblue, 10%);
+    border: none;
+    overflow: hidden;
+    box-shadow: none;
+    
+    &:hover {
+        color: white
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 3px solid darken($darkblue, 10%);
+        transition: opacity 0.3s, border 0.3s;
+        
+    }
+
+    &:hover::before {
+        opacity: 0
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        background-color: lighten($darkblue, 10%);
+        border-color: transparent;
+        border-radius: 50%;
+        transform: translate(-10px, -70px) scale(0.1);
+        opacity: 0;
+        z-index: -1;
+        transition: transform 0.3s, opacity 0.3s, background-color 0.3s
+    }
+
+    &:hover::after {
+        opacity: 1;
+        transform-origin: 100px 100px;
+        transform: scale(1) translate(-10px, -70px);
+    }
+}
